@@ -1,0 +1,142 @@
+@import '@styles/base';
+
+.wrapper {
+  margin: auto;
+  padding: 2.5rem 1.5rem;
+  background-image: var(--header-bg) ;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  text-align: center;
+  
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+
+}
+
+.inputText {
+  font-family: "Josefin Sans", sans-serif;
+  border:none;
+  // background: blue;
+  font-size: 18px;
+  // margin-left: -2px;
+  margin-top: 4px;
+  background: none;
+  width: 100%;
+  color:var(--font-todo-list);
+  
+}
+
+.note {
+  border:none;
+  // background: blue;
+  // font-size: 13px;
+  font-size: 18px;
+  margin-left: 2px;
+  padding-top: 2.78px;
+  color: var(--font-todo-list);
+  
+  // background: blue;
+  // color: light-dark(rgb(84, 84, 84), rgb(170, 170, 170));
+  .checked {
+    text-decoration: line-through;
+  }
+  .checkNone {
+    text-decoration: none;
+  }
+}
+
+.inputText:focus {
+  outline: none;
+}
+
+::placeholder {
+  color: var(--font-todo-list);
+  opacity: 1; /* Firefox */
+}
+
+.btnList {
+  background-color: brown;
+  border: 2px solid grey;
+  // borderColor: 'red',
+  width: 1.1rem ;
+  height: 1.1rem;
+  border-radius: 50%;
+  
+}
+.btnListChecked {
+  background-color: brown;
+  // border: 2px solid grey;
+  // borderColor: 'red',
+  margin-left: 2px;
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 50%;
+  
+}
+
+.outerCircle {
+  width: 1.2rem;
+  height: 1.2rem;
+  // border: 2px solid black;
+  border-radius: 50%;
+  position: relative;
+  // background-color: none;
+  // opacity:0;
+  
+}
+
+.outerCircleActive {
+  width: 1.2rem;
+  height: 1.2rem;
+  // border: 2px solid black;
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // background-color: none;
+  // opacity:0;
+  background:linear-gradient( hsl(192, 100%, 67%),hsl(280, 87%, 65%)); 
+}
+
+
+
+.innerCircle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: calc(100% - 3.5px); /* Adjusted for the inner border */
+  height: calc(100% - 3.5px); /* Adjusted for the inner border */
+  border: 2.5px solid rgb(73, 31, 31);
+  border-radius: 50%;
+}
+
+
+.removeBorder {
+  // border: none;
+  border: 2.5px solid rgb(107, 19, 124);
+
+ 
+}
+
+
+// .redBg {
+//   // background-color: red;
+//   // border:none;
+// }
+
+
+
+
+
+
+@include apply-at-lg-size {
+  .container {
+    width: 40%;
+  
+  }
+}

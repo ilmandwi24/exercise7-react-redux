@@ -8,3 +8,5 @@ export const selectTheme = createSelector(selectAppState, (state) => state.theme
 export const selectPopup = createSelector(selectAppState, (state) => state.popup);
 export const selectLoading = createSelector(selectAppState, (state) => state.loading);
 export const selectData = createSelector(selectAppState, (state) => state.data);
+export const selectTodo = createSelector(selectAppState, (state) => state.todos);
+export const selectFilter = createSelector(selectAppState, (state) => state.filter);

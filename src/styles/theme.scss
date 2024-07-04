@@ -1,19 +1,45 @@
 @import './media-mixins.scss';
 
+// $img: url('../../static/images/bg-desktop-light.jpg');
+
 @mixin global-theme {
   --color-button: #ed0226;
 }
 
 @mixin light-theme {
+  --header-bg: url('../../static/images/bg-mobile-light.jpg');
   --color-text: #001a41;
-  --color-background: linear-gradient(-45deg, #EDF1F4, #C3CBDC, #DEE4EA, #F9FCFF);
-  --color-background-2: #f5f7fa;
-  --color-text-gradient: -webkit-linear-gradient(45deg, #c20ea1, #dd2d7f, #ee4c5e, #f46d41);
+  // --color-background: linear-gradient(-45deg, #EDF1F4, #C3CBDC, #DEE4EA, #F9FCFF);
+  --color-background-2: #ffffff;
+  // --color-text-gradient: -webkit-linear-gradient(45deg, #c20ea1, #dd2d7f, #ee4c5e, #f46d41);
+  --main-component: hsl(0, 0%, 98%);
+  --line-divider: rgb(237, 237, 237);
+  --circle-icon:hsl(0, 0%, 90%);
+  --font-todo-list:hsl(251, 4%, 51%);
+  --delete-icon:hsl(252, 2%, 47%);
+  --font-footer-list: hsl(252, 4%, 73%);
+  --credit:  hsl(252, 4%, 70%);
+  // --circle-icon-list:hsl(0, 0%, 92%);
+  @include apply-at-lg-size {
+    --header-bg: url('../../static/images/bg-desktop-light.jpg');
+  }
 }
 
 @mixin dark-theme {
+  --header-bg: url('../../static/images/bg-mobile-dark.jpg');
   --color-text: #f4eee0;
   --color-background: linear-gradient(-45deg, #121212, #1a1a1a, #1a1625, #2f2b3a);
   --color-background-2: #46424f;
   --color-text-gradient: -webkit-linear-gradient(45deg, #f2efdc, #f5f5f5);
+  --main-component: hsl(235, 23%, 19%);
+  --line-divider: rgb(51, 53, 74);
+  --circle-icon: hsl(235, 18%, 30%);
+  --font-todo-list:hsl(235, 16%, 71%);
+  --delete-icon:hsl(235, 10%, 42%);
+  --font-footer-list: hsl(235, 14%, 35%);
+  --credit:hsl(252, 4%, 70%);
+  // --circle-icon-list:hsl(235, 18%, 25%);
+  @include apply-at-lg-size {
+    --header-bg: url('../../static/images/bg-desktop-dark.jpg');
+  }
 }

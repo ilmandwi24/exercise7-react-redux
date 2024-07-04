@@ -13,7 +13,7 @@ const Home = ({ data }) => {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    dispatch(getData());
+    console.log(dispatch(getData()));
   }, [dispatch]);
 
   useEffect(() => {

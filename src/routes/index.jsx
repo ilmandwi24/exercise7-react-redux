@@ -2,10 +2,18 @@ import MainLayout from '@layouts/MainLayout';
 
 import Home from '@pages/Home';
 import NotFound from '@pages/NotFound';
+import Todo from '@pages/Todo';
 
 const routes = [
   {
     path: '/',
+    name: 'Todo',
+    protected: false,
+    component: Todo,
+    // layout: MainLayout,
+  },
+  {
+    path: '/home',
     name: 'Home',
     protected: false,
     component: Home,
