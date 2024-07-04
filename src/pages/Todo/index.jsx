@@ -187,14 +187,17 @@ const Todo = ({ todos, filter }) => {
                   width: '100%',
                   // backgroundColor: 'blue',
                   display: 'flex',
-                  padding: '10px 10px',
+                  padding: '0 10px',
                   alignItems: 'center',
                   justifyContent: 'space-between',
                   // borderRadius: 1,
                   color: 'var(  --font-footer-list)',
                 }}
               >
-                <Box sx={{ margin: '0 10px' }}>{jumlahItem} items left</Box>
+                <Box sx={{ margin: '10px' }}>{jumlahItem} items left</Box>
+                <Box className={classes.menuMobile}>
+                  <MenuTodo />
+                </Box>
                 <Box sx={{ margin: '0 10px' }}>
                   <Button
                     onClick={() => dispatch(clearCompleteTodo())}
@@ -217,7 +220,9 @@ const Todo = ({ todos, filter }) => {
             </Box>
           </Grid>
           {/* Feature Menu */}
-          <MenuTodo />
+          <Grid item xs={12} className={classes.menuDesktop}>
+            <MenuTodo />
+          </Grid>
           {/* Footer */}
           <Grid item xs={12}>
             <Box sx={{ display: 'flex', alignItems: 'center', border: 'none', mt: 4 }}>

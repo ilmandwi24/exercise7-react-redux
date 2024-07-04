@@ -2,7 +2,9 @@
 
 .wrapper {
   margin: auto;
-  padding: 2.5rem 1.5rem;
+  // padding-top: 2.5rem;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
   background-image: var(--header-bg) ;
   background-repeat: no-repeat;
   min-height: 100vh;
@@ -13,6 +15,7 @@
 .container {
   margin: 0 auto;
   width: 100%;
+  padding: 2rem 0;
 
 }
 
@@ -129,14 +132,28 @@
 //   // border:none;
 // }
 
+.menuDesktop {
+  display: block;
+}
+
+.menuMobile {
+  display: none;
+}
 
 
 
 
 
-@include apply-at-lg-size {
+@include apply-at-xxl-size {
   .container {
-    width: 40%;
+    width: 50%;
   
+  }
+  .menuDesktop {
+    display: none;
+  }
+  .menuMobile {
+    display: block;
+    // background-color: blue;
   }
 }
