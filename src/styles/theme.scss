@@ -20,7 +20,7 @@
   --font-footer-list: hsl(252, 4%, 73%);
   --credit:  hsl(252, 4%, 70%);
   // --circle-icon-list:hsl(0, 0%, 92%);
-  @include apply-at-xs2-size {
+  @include apply-at-sm-size {
     --header-bg: url('../../static/images/bg-desktop-light.jpg');
   }
 }
@@ -39,7 +39,7 @@
   --font-footer-list: hsl(235, 14%, 35%);
   --credit:hsl(252, 4%, 70%);
   // --circle-icon-list:hsl(235, 18%, 25%);
-  @include apply-at-xs2-size {
+  @include apply-at-sm-size {
     --header-bg: url('../../static/images/bg-desktop-dark.jpg');
   }
 }
