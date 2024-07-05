@@ -7,8 +7,8 @@ import RadioButtonUncheckedIcon from '@mui/icons-material/RadioButtonUnchecked';
 import MenuTodo from '@components/Todo/MenuTodo';
 import Header from '@components/Todo/Header';
 import { setTodo } from '@containers/App/actions';
-import classes from './todo.module.scss';
 import ListTodo from '@components/Todo/ListTodo';
+import classes from './todo.module.scss';
 
 const Todo = () => {
   const dispatch = useDispatch();

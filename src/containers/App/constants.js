@@ -6,6 +6,7 @@ export const SET_DATA = 'App/SET_DATA';
 export const GET_DATA = 'App/GET_DATA';
 export const SET_TODO = 'App/SET_TODO';
 export const DEL_TODO = 'App/DEL_TODO';
+export const UPDATE_TODO = 'App/UPDATE_TODO';
 export const CHECKED_TODO = 'App/CHECKED_TODO';
 export const CLEAR_COMPLETED_TODO = 'App/CLEAR_COMPLETED_TODO';
 export const SET_FILTER = 'App/SET_FILTER';

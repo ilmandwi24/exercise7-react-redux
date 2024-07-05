@@ -9,6 +9,7 @@ import {
   SET_DATA,
   SET_TODO,
   DEL_TODO,
+  UPDATE_TODO,
   CHECKED_TODO,
   CLEAR_COMPLETED_TODO,
   SET_FILTER,
@@ -53,6 +54,9 @@ const appReducer = (state = initialState, action) =>
         break;
       case DEL_TODO:
         draft.todos = draft.todos.filter((item) => item.id !== action.id);
+        break;
+      case UPDATE_TODO:
+        draft.todos = action.todos;
         break;
       case CHECKED_TODO:
         // draft.todos = [];

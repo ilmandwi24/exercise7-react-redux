@@ -7,6 +7,7 @@ import {
   GET_DATA,
   SET_TODO,
   DEL_TODO,
+  UPDATE_TODO,
   CHECKED_TODO,
   CLEAR_COMPLETED_TODO,
   SET_FILTER,
@@ -61,6 +62,11 @@ export const setTodo = (todo) => ({
 export const delTodo = (id) => ({
   type: DEL_TODO,
   id,
+});
+
+export const updateTodo = (todos) => ({
+  type: UPDATE_TODO,
+  todos,
 });
 
 export const checkedTodo = (id) => ({

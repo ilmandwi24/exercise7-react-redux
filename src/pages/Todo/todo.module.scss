@@ -34,12 +34,20 @@
 
 .note {
   border:none;
+  display: flex;
+  flex-wrap: wrap;
   // background: blue;
   // font-size: 13px;
   font-size: 18px;
   margin-left: 2px;
   padding-top: 2.78px;
   color: var(--font-todo-list);
+  span {
+    display: flex;
+    flex-wrap: wrap;
+    word-break: break-all;  
+    text-align: left;
+  }
   
   // background: blue;
   // color: light-dark(rgb(84, 84, 84), rgb(170, 170, 170));
